@@ -1,0 +1,36 @@
+{
+  "name": "mc-protocol-bot-1.1.33",
+  "module": "src/index.ts",
+  "bin": "dist/index.js",
+  "type": "module",
+  "private": true,
+  "scripts": {
+    "build": "esbuild src/index.ts --bundle --platform=node --format=esm --outfile=dist/index.js --packages=external",
+    "start": "node --expose-gc --import tsx src/index.ts",
+    "start:prod": "node --expose-gc dist/index.js",
+    "start:prod:build": "npm run build && node --expose-gc dist/index.js",
+    "dev": "tsx watch src/index.ts"
+  },
+  "devDependencies": {
+    "@types/node": "^25.9.5",
+    "esbuild": "^0.25.12",
+    "tsx": "^4.23.1"
+  },
+  "peerDependencies": {
+    "typescript": "^6.0.3"
+  },
+  "dependencies": {
+    "@types/react": "^19.2.17",
+    "chalk": "^5.6.2",
+    "discord.js": "^14.27.0",
+    "ink": "^7.1.1",
+    "minecraft-protocol": "^1.66.2",
+    "mineflayer": "^4.37.1",
+    "mineflayer-pathfinder": "^2.4.5",
+    "ora": "^9.4.1",
+    "prismarine-chat": "^1.13.0",
+    "react": "^19.2.8",
+    "socks": "^2.8.10",
+    "vec3": "^0.2.0"
+  }
+}

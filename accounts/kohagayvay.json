@@ -1,0 +1,173 @@
+{
+  "server": {
+    "host": "global.unimc.vn",
+    "port": 25565,
+    "version": "1.21.9",
+    "viewDistance": "tiny",
+    "pingBeforeConnect": false
+  },
+  "proxy": {
+    "enabled": true,
+    "type": "socks5",
+    "host": "118.70.171.73",
+    "port": 26102,
+    "username": "HcrfOk",
+    "password": "CfLMZR"
+  },
+  "bot": {
+    "username": "kohagayvay",
+    "auth": "offline",
+    "hideErrors": true,
+    "profilesFolder": "./nmp-cache",
+    "promptBeforeJoin": false
+  },
+  "reconnect": {
+    "enabled": true,
+    "delay": 5000,
+    "maxAttempts": 10
+  },
+  "chat": {
+    "prefix": "!",
+    "logPackets": false
+  },
+  "resourcePack": {
+    "action": "accept"
+  },
+  "filters": {
+    "hideNPCJoinLeave": true,
+    "npcPatterns": [
+      "CIT-",
+      "[NPC]"
+    ],
+    "hideEmptyMessages": true
+  },
+  "autoLogin": {
+    "enabled": false,
+    "command": "/login faifai123",
+    "delay": 2500
+  },
+  "autoCommands": {
+    "enabled": true,
+    "onSpawn": [
+      {
+        "command": "/use 4",
+        "delay": 4000,
+        "awaitCompletion": true
+      },
+      {
+        "command": "/click 20",
+        "delay": 0,
+        "awaitCompletion": true
+      },
+      {
+        "command": "/home",
+        "delay": 10000,
+        "awaitCompletion": true
+      },
+      {
+        "command": "/mine",
+        "delay": 7000,
+        "awaitCompletion": false
+      }
+    ],
+    "onDeath": []
+  },
+  "antiAFK": {
+    "enabled": false,
+    "intervalSeconds": 120,
+    "action": "sneak"
+  },
+  "autoRespawn": {
+    "enabled": true,
+    "delay": 1000
+  },
+  "chatLog": {
+    "enabled": false,
+    "directory": "logs"
+  },
+  "mine": {
+    "capdaoEnabled": true,
+    "capdaoLevel": 50
+  },
+  "coop": {
+    "enabled": false,
+    "owner": "",
+    "members": []
+  },
+  "chatGames": {
+    "enabled": true,
+    "delayMs": 1000,
+    "disabledAccounts": [],
+    "toolTitle": {
+      "enabled": true,
+      "normalEnabled": false,
+      "multiplyEnabled": false,
+      "wordEnabled": false,
+      "normalMinDelayMs": 0,
+      "normalMaxDelayMs": 0,
+      "multiplyMinDelayMs": 0,
+      "multiplyMaxDelayMs": 0,
+      "wordMinDelayMs": 0,
+      "wordMaxDelayMs": 0,
+      "benchmark": false,
+      "debug": false
+    }
+  },
+  "antiBot": {
+    "enabled": "auto",
+    "brand": {
+      "name": "vanilla"
+    },
+    "clientSettings": {
+      "locale": "vi_vn",
+      "viewDistance": 2,
+      "chatMode": 0,
+      "chatColors": true,
+      "skinParts": 127,
+      "mainHand": 1,
+      "enableTextFiltering": false,
+      "enableServerListing": true
+    },
+    "humanBehavior": {
+      "enabled": true,
+      "lookIntervalMs": 5000,
+      "startDelayMs": 3000,
+      "microMovement": true
+    },
+    "packetGuard": {
+      "autoRegisterChannels": true,
+      "defaultChannels": [
+        "minecraft:brand",
+        "minecraft:register"
+      ],
+      "respondTransactions": true,
+      "optimizePackets": true
+    },
+    "physics": {
+      "forceEnabled": true
+    }
+  },
+  "debug": {
+    "enabled": false,
+    "logAllPackets": false,
+    "logTransfers": false,
+    "logConnection": false,
+    "logLatency": false,
+    "logStats": false,
+    "statsIntervalMs": 60000,
+    "logInventory": false,
+    "disableSpinner": false
+  },
+  "discord": {
+    "enabled": false,
+    "token": "",
+    "channelId": "",
+    "bridgeChat": true,
+    "bridgeCommands": true,
+    "allowedUsers": [
+      ""
+    ],
+    "logWebhookUrl": "",
+    "logWebhookEnabled": false
+  }
+}

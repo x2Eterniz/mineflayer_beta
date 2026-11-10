@@ -1,0 +1,45 @@
+{
+  "autoEat": {
+    "enabled": true,
+    "minFood": 14,
+    "useFeedCmd": true
+  },
+  "autoSkill": {
+    "enabled": false,
+    "range": 15,
+    "useSkill1": true,
+    "useSkill2": true,
+    "useSkill3": true,
+    "useSkill4": true
+  },
+  "serverTriggerBot": {
+    "enabled": false,
+    "checkIntervalMs": 5000,
+    "command": "taf",
+    "initialDelayMs": 1000
+  },
+  "autoFollow": {
+    "enabled": false,
+    "target": ""
+  },
+  "lockPosition": {
+    "enabled": false,
+    "x": 152,
+    "y": 262,
+    "z": -386,
+    "range": 2
+  },
+  "aimMobs": {
+    "enabled": false,
+    "range": 30,
+    "aimPlayers": false,
+    "playerRange": 30
+  },
+  "autoTool": {
+    "autoSword": false,
+    "autoPickaxe": false
+  },
+  "attackLog": {
+    "enabled": false
+  }
+}
